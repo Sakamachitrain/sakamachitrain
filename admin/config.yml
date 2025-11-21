@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ユーザー名/sakamachitrain  # ←GitHubユーザー名とリポジトリ名を入れる
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "articles"
+    label: "記事"
+    folder: "articles"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "タイトル", name: "title", widget: "string" }
+      - { label: "日付", name: "date", widget: "datetime" }
+      - { label: "本文", name: "body", widget: "markdown" }
