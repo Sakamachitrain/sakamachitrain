@@ -1,7 +1,7 @@
 backend:
-  name: github
-  repo: ユーザー名/sakamachitrain  # ←GitHubユーザー名とリポジトリ名を入れる
+  name: git-gateway
   branch: main
+
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -17,3 +17,4 @@ collections:
       - { label: "タイトル", name: "title", widget: "string" }
       - { label: "日付", name: "date", widget: "datetime" }
       - { label: "本文", name: "body", widget: "markdown" }
+
